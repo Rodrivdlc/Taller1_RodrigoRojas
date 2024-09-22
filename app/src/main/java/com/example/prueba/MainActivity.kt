@@ -1,4 +1,3 @@
-// app/src/main/java/com/example/prueba/MainActivity.kt
 package com.example.prueba
 
 import android.content.Intent
@@ -6,9 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.activity.ComponentActivity
+import android.app.Activity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,14 +15,14 @@ class MainActivity : ComponentActivity() {
         val nameEditText: EditText = findViewById(R.id.nameEditText)
         val saveButton: Button = findViewById(R.id.saveButton)
         val nameTextView: TextView = findViewById(R.id.nameTextView)
-        val settingsButton: Button = findViewById(R.id.settingsButton)
+        val navigateButton: Button = findViewById(R.id.navigateButton)
 
         saveButton.setOnClickListener {
             val name = nameEditText.text.toString()
             nameTextView.text = name
         }
 
-        settingsButton.setOnClickListener {
+        navigateButton.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
