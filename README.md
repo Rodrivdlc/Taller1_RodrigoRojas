@@ -19,8 +19,7 @@ Esta actividad se centrará en la creación de una aplicación básica en Androi
 
 Enunciado
 Desarrolla una aplicación Android que incluya las siguientes funcionalidades básicas:
-
-1.      Pantalla de Inicio:
+1. Pantalla de Inicio
 
 Un saludo personalizado que cambia según la hora del día (Buenos días, Buenas tardes, Buenas noches).
 Un botón que lleve a la pantalla de la actividad principal.
