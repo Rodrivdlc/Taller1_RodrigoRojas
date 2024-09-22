@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.RadioButton
-import androidx.appcompat.app.AppCompatActivity
+import android.app.Activity
 import androidx.core.content.ContextCompat
 
-class SettingsActivity : AppCompatActivity() {
+class SettingsActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
@@ -32,4 +32,5 @@ class SettingsActivity : AppCompatActivity() {
         val rootView = findViewById<View>(android.R.id.content)
         rootView.setBackgroundColor(ContextCompat.getColor(this, colorResId))
     }
+}
 }
