@@ -33,4 +33,3 @@ class SettingsActivity : Activity() {
         rootView.setBackgroundColor(ContextCompat.getColor(this, colorResId))
     }
 }
-}
