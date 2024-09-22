@@ -1,3 +1,4 @@
+// app/src/main/java/com/example/prueba/MainActivity.kt
 package com.example.prueba
 
 import android.content.Intent
